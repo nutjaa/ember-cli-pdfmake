@@ -1,0 +1,10 @@
+{{#if show_button}}
+<ul class="list-inline">
+  <li><button class="btn btn-primary" {{action "open"}}>Open</button></li>
+  <li><button class="btn btn-primary" {{action "print"}}>Print</button></li>
+  <li><button class="btn btn-primary" {{action "download"}}>Download</button></li>
+</ul>
+{{/if}}
+<div class="pdf-container" style={{myStyle}}>
+	<iframe id='pdfV' style="width:100%;height: 100%;bottom: 0;position: absolute;"></iframe>
+</div>
